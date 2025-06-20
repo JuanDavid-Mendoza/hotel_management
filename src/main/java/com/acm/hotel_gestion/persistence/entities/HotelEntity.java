@@ -28,4 +28,7 @@ public class HotelEntity implements Serializable {
 
     @OneToMany(mappedBy = "hotel")
     private List<HabitacionEntity> habitaciones = new ArrayList<>();
+
+    @OneToMany(mappedBy = "hotel")
+    private List<TipoHabitacionEntity> tipoHabitaciones = new ArrayList<>();
 }

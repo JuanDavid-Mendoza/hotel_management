@@ -5,14 +5,15 @@ import com.acm.hotel_gestion.persistence.entities.HotelEntity;
 import com.acm.hotel_gestion.persistence.repository.HotelRepository;
 import com.acm.hotel_gestion.util.HotelMapper;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class HotelService {
     private final HotelRepository hotelRepository;
 
@@ -27,6 +28,7 @@ public class HotelService {
 
     public HotelModel findById(Long id) {
         HotelEntity hotelEntity = hotelRepository.findById(id).orElse(null);
+        log.info(String.valueOf(hotelEntity));
         return hotelEntity != null ? HotelMapper.entityToModel(hotelEntity) : null;
     }
 
