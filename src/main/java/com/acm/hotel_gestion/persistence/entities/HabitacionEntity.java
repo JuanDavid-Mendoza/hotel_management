@@ -2,6 +2,7 @@ package com.acm.hotel_gestion.persistence.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -11,15 +12,16 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Builder
 @Table(name="habitacion")
 public class HabitacionEntity implements Serializable {
     @Id
     @Column(name="id_habitacion")
     private Long id;
     @Column(name="numero_habitacion")
-    private Long numeroHabitacion;
+    private Integer numeroHabitacion;
     @Column(name="precio_dia")
-    private Long precioDia;
+    private Integer precioDia;
     private Boolean disponible;
 
     @ManyToOne
