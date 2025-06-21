@@ -1,5 +1,7 @@
 package com.acm.hotel_gestion.persistence.entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -7,6 +9,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @AllArgsConstructor
@@ -26,9 +30,15 @@ public class HabitacionEntity implements Serializable {
 
     @ManyToOne
     @JoinColumn(name="fk_id_hotel")
+    @JsonBackReference("hotel-habitaciones")
     private HotelEntity hotel;
 
     @ManyToOne
     @JoinColumn(name="fk_id_tipo_habitacion")
+    @JsonBackReference("tipoHabitacion-habitaciones")
     private TipoHabitacionEntity tipoHabitacion;
+
+    @OneToMany(mappedBy = "habitacion")
+    @JsonManagedReference("habitacion-reservas")
+    private List<ReservaEntity> reservas =  new ArrayList<>();
 }

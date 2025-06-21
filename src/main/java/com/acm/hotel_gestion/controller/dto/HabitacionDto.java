@@ -15,7 +15,7 @@ public class HabitacionDto {
     @Min(value = 1, message = "El numero de habitacion debe ser mayor que 0")
     private Integer numeroHabitacion;
 
-    @Min(value = 1, message = "El precio por día debe ser mayor que 0")
+    @Min(value = 1, message = "El precio por día debe ser mayor a 0")
     private Integer precioDia;
 
     private Boolean disponible;
