@@ -1,0 +1,2853 @@
+{
+	"info": {
+		"_postman_id": "f571b5c4-5320-42e2-9eb5-3a3f8d7b641b",
+		"name": "Exportaciones",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37037658"
+	},
+	"item": [
+		{
+			"name": "Springboot Copy",
+			"item": [
+				{
+					"name": "Hotel",
+					"item": [
+						{
+							"name": "saveHotel",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 2,\r\n    \"nombre\": \"Hotel 2\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234566240\",\r\n    \"correo\": \"hotel2@gmail.com\",\r\n    \"direccion\": \"Calle 2A #2B-2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/hotel",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"hotel"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateHotel",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 2,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/hotel",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"hotel"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getHotelById",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/hotel/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"hotel",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllHotels",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/hotel",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"hotel"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteHotelById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/hotel/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"hotel",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "TipoHabitacion",
+					"item": [
+						{
+							"name": "saveTipoHabitacion",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Tipo de habitacion 2\",\r\n    \"cantidad\": 12,\r\n    \"idhotel\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/tipoHabitacion",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tipoHabitacion"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateTipoHabitacion",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 2,\r\n    \"nombre\": \"Tipo de habitacion 1\",\r\n    \"cantidad\": 12\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/tipoHabitacion",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tipoHabitacion"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getTipoHabitacionById",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/tipoHabitacion/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tipoHabitacion",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getTipoHabitacion",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/tipoHabitacion",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tipoHabitacion"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteTipoHabitacionById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/tipoHabitacion/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"tipoHabitacion",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Habitacion",
+					"item": [
+						{
+							"name": "saveHabitacion",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"numeroHabitacion\": 2,\r\n    \"precioDia\": 50,\r\n    \"disponible\": false,\r\n    \"idTipoHabitacion\": 1,\r\n    \"idhotel\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/habitacion",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"habitacion"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateHabitacion",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"numeroHabitacion\": 2,\r\n    \"precioDia\": 45,\r\n    \"disponible\": true,\r\n    \"idTipoHabitacion\": 1,\r\n    \"idhotel\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/habitacion",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"habitacion"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getHabitacionById",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/habitacion/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"habitacion",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getHabitacion",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/habitacion",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"habitacion"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteHabitacionById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/habitacion/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"habitacion",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Empleado",
+					"item": [
+						{
+							"name": "saveEmpleado",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 3,\r\n    \"correo\": \"andresrodriguez@gmail.com\",\r\n    \"telefono\": \"1234567890\",\r\n    \"primerNombre\":\"Andrez\",\r\n    \"segundoNombre\":\"\",\r\n    \"primerApellido\":\"Rodriguez\",\r\n    \"segundoApellido\":\"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/empleado",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"empleado"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateEmpleado",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 3,\r\n    \"correo\": \"andresrodriguez@gmail.com\",\r\n    \"telefono\": \"3155254995\",\r\n    \"primerNombre\":\"Andrez\",\r\n    \"segundoNombre\":\"\",\r\n    \"primerApellido\":\"Rodriguez\",\r\n    \"segundoApellido\":\"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/empleado",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"empleado"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getEmpleadoById",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/empleado/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"empleado",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getEmpleado",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/empleado",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"empleado"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteEmpleadoById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/empleado/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"empleado",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Cliente",
+					"item": [
+						{
+							"name": "saveCliente",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 3,\r\n    \"primerNombre\":\"Juan\",\r\n    \"segundoNombre\":\"Esteban\",\r\n    \"primerApellido\":\"Lozano\",\r\n    \"segundoApellido\":\"\",\r\n    \"cedula\":\"100131565\",\r\n    \"direccion\":\"Calle 22 A  68  23\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/cliente",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cliente"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateCliente",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 3,\r\n    \"primerNombre\":\"Juan\",\r\n    \"segundoNombre\":\"Esteban\",\r\n    \"primerApellido\":\"Lozano\",\r\n    \"segundoApellido\":\"\",\r\n    \"cedula\":\"100131565\",\r\n    \"direccion\":\"Calle 26 # 14 - 45\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/cliente",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cliente"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getClienteById",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/cliente/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cliente",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getCliente",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/cliente",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cliente"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteClienteById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/cliente/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cliente",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Administrador General",
+					"item": [
+						{
+							"name": "saveAdministradorGeneral",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 4,\r\n    \"correo\": \"luisdiaz@gmail.com\",\r\n    \"telefono\": \"3154987654\",\r\n    \"primerNombre\":\"Luis\",\r\n    \"segundoNombre\":\"\",\r\n    \"primerApellido\":\"Dias\",\r\n    \"segundoApellido\":\"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/administradorGeneral",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"administradorGeneral"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateAdministradorGeneral",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 4,\r\n    \"correo\": \"luisdiaz1312@gmail.com\",\r\n    \"telefono\": \"3205978642\",\r\n    \"primerNombre\":\"Luis\",\r\n    \"segundoNombre\":\"\",\r\n    \"primerApellido\":\"Dias\",\r\n    \"segundoApellido\":\"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/administradorGeneral",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"administradorGeneral"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAdministradorGeneralById",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/administradorGeneral/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"administradorGeneral",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAdministradorGeneral",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/administradorGeneral",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"administradorGeneral"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteAdministradorGeneralById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/administradorGeneral/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"administradorGeneral",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Administrador",
+					"item": [
+						{
+							"name": "saveAdministrador",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 4,\r\n    \"primerNombre\":\"Laura\",\r\n    \"segundoNombre\":\"Lorena\",\r\n    \"primerApellido\":\"Gutierez\",\r\n    \"segundoApellido\":\"\",\r\n    \"correo\": \"lauralgutierrez@gmail.com\",\r\n    \"telefono\": \"3239467357\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/administrador",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"administrador"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateAdministrador",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 3,\r\n    \"primerNombre\":\"Elsa\",\r\n    \"segundoNombre\":\"Lorena\",\r\n    \"primerApellido\":\"Mendoza\",\r\n    \"segundoApellido\":\"\",\r\n    \"correo\": \"elsamendoza@gmail.com\",\r\n    \"telefono\": \"3108457397\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/administrador",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"administrador"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAdministradorById",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/administrador/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"administrador",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAdministrador",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/administrador",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"administrador"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteAdministradorById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/administrador/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"administrador",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Reserva",
+					"item": [
+						{
+							"name": "saveReserva",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"fechaInicio\": \"2025-06-25T14:00:00\",\r\n    \"fechaFinal\": \"2025-06-28T11:00:00\",\r\n    \"cantidadDias\": 3,\r\n    \"estado\": true,\r\n    \"fechaReserva\": \"2025-06-21T13:45:00\",\r\n    \"idhabitacion\":1,\r\n    \"idcliente\":1\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/reserva",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"reserva"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateReserva",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 3,\r\n    \"primerNombre\":\"Elsa\",\r\n    \"segundoNombre\":\"Lorena\",\r\n    \"primerApellido\":\"Mendoza\",\r\n    \"segundoApellido\":\"\",\r\n    \"correo\": \"elsamendoza@gmail.com\",\r\n    \"telefono\": \"3108457397\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/reserva",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"reserva"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getReservaById",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/reserva/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"reserva",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getReserva",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/reserva",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"reserva"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteReservaById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/reserva/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"reserva",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Pago",
+					"item": [
+						{
+							"name": "savePago",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"fecha\": \"2025-06-21T13:45:00\",\r\n    \"idreserva\":1,\r\n    \"metodoPago\":\"Efectivo\",\r\n    \"pagoTotal\":135\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/pago",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"pago"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updatePago",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 3,\r\n    \"primerNombre\":\"Elsa\",\r\n    \"segundoNombre\":\"Lorena\",\r\n    \"primerApellido\":\"Mendoza\",\r\n    \"segundoApellido\":\"\",\r\n    \"correo\": \"elsamendoza@gmail.com\",\r\n    \"telefono\": \"3108457397\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/pago",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"pago"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getPagoById",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/pago/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"pago",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getPago",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/pago",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"pago"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletePagoById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/pago/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"pago",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Factura",
+					"item": [
+						{
+							"name": "saveFactura",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"idreserva\":1,\r\n    \"idpago\":1,\r\n    \"valorTotal\":135,\r\n    \"fechaEmision\": \"2025-06-21T13:45:00\"\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/factura",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"factura"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateFactura",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"idreserva\":1,\r\n    \"idpago\":1,\r\n    \"valorTotal\":165,\r\n    \"fechaEmision\": \"2025-06-21T13:45:00\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/factura",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"factura"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getFacturaById",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/factura/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"factura",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getFactura",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/factura",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"factura"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteFacturaById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/factura/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"factura",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Usuario",
+					"item": [
+						{
+							"name": "saveUsuario",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 8,\r\n    \"nombreUsuario\":\"camiloARP45\",\r\n    \"contrasena\":\"camilorodripe45\",\r\n    \"rol\":\"Administrador\",\r\n    \"idadministrador\":1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/usuario",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"usuario"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateUsuario",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 8,\r\n    \"nombreUsuario\":\"camiloARP47\",\r\n    \"contrasena\":\"camilorodripe47\",\r\n    \"rol\":\"Administrador\",\r\n    \"idadministrador\":1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/usuario",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"usuario"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getUsuarioById",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/usuario/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"usuario",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getUsuario",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/usuario",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"usuario"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteUsuarioById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlclRva2VuIjoiYWRtaW5zZ2F0ZXN0IiwiY29uZmlybWF0aW9uRGF0ZSI6IjIwMjItMDUtMTAiLCJhdmF0YXIiOiJodHRwczovL2FjYWRlbWlhLXVzZXItc2VydmVybGVzcy1kZXBsb3ltZW50LnMzLmFtYXpvbmF3cy5jb20vZmlsZXMvdGVzdC8yLzIwMjIvYXZhdGFyLzE2NDUxMTU4OTgwNTcucG5nIiwibGFuZ3VhZ2VLZXkiOm51bGwsInRpbWVab25lIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjI2OjI0IiwidXBkYXRlZEF0IjoiMjAyMy0wMi0xMCAxNDowMzozNyIsInBlb3BsZSI6eyJjcmVhdGVkQXQiOiIyMDIxLTExLTE4IDA5OjMzOjU4IiwidXBkYXRlZEF0IjoiMjAyMy0wMS0xMSAyMTozNjozMCIsImlkIjoxMiwiaW5zdGl0dXRpb25JZCI6MCwidXNlcklkIjo5LCJsbXNVc2VyS2V5IjoiNTIiLCJpZGVudGlmaWNhdGlvbiI6IjEwMDI2MzM3NzkiLCJpZGVudGlmaWNhdGlvblR5cGVJZCI6MTEsImZpcnN0TmFtZSI6Ik5hdGFsaWEiLCJzZWNvbmROYW1lIjpudWxsLCJzZWNvbmRMYXN0bmFtZSI6bnVsbCwiZmlyc3RMYXN0bmFtZSI6IlNpbHZhIiwibmFtZXMiOiJOYXRhbGlhIiwibGFzdG5hbWVzIjoiU2lsdmEiLCJtb2JpbGUiOiIzNDU2Nzg5IiwiaG9tZVBob25lIjoiMDM4NDIwNTAwNSIsIndvcmtQaG9uZSI6IjM0NTY3ODkiLCJlbWFpbCI6Im5hdGFzaWx2YTAxMDlAaG90bWFpbC5jb20iLCJob21lTXVuaWNpcGFsaXR5SWQiOjIsImRpcmVjdGlvbiI6IkNhbGxlIDEwQiBObyAxOEEgNDUgQiBDZW50ZW5hcmlvIiwiYmlydGhEYXRlIjoiMjAwMC0wOS0wMSIsImJpcnRoTXVuaWNpcGFsaXR5SWQiOjEzMDc4LCJuYXRpb25hbGl0eSI6IkNvbG9tYmlhbmEiLCJnZW5kZXJJZCI6MTQsInJlbGlnaW9uIjoiY2F0b2xpY2EiLCJwcmltYXJ5TGFuZ3VhZ2UiOiJlc3Bhw7FvbCJ9LCJpYXQiOjE2OTQwMzE1ODQsImV4cCI6MTY5NDAzNTE4NH0.Tdsu4nawcmInR24Fdool-IRnKl0-Ort4n_FcQKwf66A",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Institution_id",
+										"value": "93",
+										"type": "text"
+									},
+									{
+										"key": "Role_id",
+										"value": "247",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Hotel 1\",\r\n    \"ciudad\": \"Bogotá\",\r\n    \"telefono\": \"1234567890\",\r\n    \"correo\": \"hotel1@gmail.com\",\r\n    \"direccion\": \"Calle 1A #1B-1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/usuario/8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"usuario",
+										"8"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
