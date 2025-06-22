@@ -1,6 +1,6 @@
 # Hotel Gestion Backend
 
-Este proyecto es un backend desarrollado con **Spring Boot** y **PostgreSQL** para la gestión de hoteles, habitaciones, tipos de habitación y otros módulos relacionados.
+Este proyecto es un backend desarrollado con **Spring Boot** y **PostgreSQL** para la gestión de hoteles, habitaciones, tipos de habitación, empleados, clientes, reservas y otros módulos relacionados.
 
 ## Tecnologías
 
@@ -23,21 +23,13 @@ Este proyecto es un backend desarrollado con **Spring Boot** y **PostgreSQL** pa
 
 La configuración de la base de datos está en `src/main/resources/application.properties`:
 
-```properties ejemplo
+```properties
 spring.application.name=hotel_db
 spring.datasource.url=jdbc:postgresql://localhost:5432/hotel_db
 spring.datasource.username=postgres
 spring.datasource.password=1234
 spring.datasource.driver-class-name=org.postgresql.Driver
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
-```
-
-### Crear la base de datos
-
-Desde PostgreSQL:
-
-```sql
-https://drive.google.com/drive/folders/1GVphPYNwsU6a_Q-AyY-XJU-U0zXUyUk0
 ```
 
 ### Ejecutar el backend
@@ -52,7 +44,7 @@ La API quedará disponible en `http://localhost:8080`
 
 ## Endpoints disponibles
 
-###  Hotel
+### Hotel
 
 | Método | URL           | Descripción               | 
 | ------ | ------------- | ------------------------- | 
@@ -62,7 +54,7 @@ La API quedará disponible en `http://localhost:8080`
 | GET    | `/hotel/{id}` | Obtener hotel por ID      | 
 | DELETE | `/hotel/{id}` | Eliminar hotel por ID     |
 
-###  TipoHabitacion
+### TipoHabitacion
 
 | Método | URL                    | Descripción                    |
 | ------ | ---------------------- | ------------------------------ |
@@ -72,7 +64,7 @@ La API quedará disponible en `http://localhost:8080`
 | GET    | `/tipoHabitacion/{id}` | Obtener tipo por ID            |
 | DELETE | `/tipoHabitacion/{id}` | Eliminar tipo por ID           |
 
-###  Habitacion
+### Habitacion
 
 | Método | URL                | Descripción                    |
 | ------ | ------------------ | ------------------------------ |
@@ -81,6 +73,86 @@ La API quedará disponible en `http://localhost:8080`
 | GET    | `/habitacion`      | Obtener todas las habitaciones |
 | GET    | `/habitacion/{id}` | Obtener habitación por ID      |
 | DELETE | `/habitacion/{id}` | Eliminar habitación por ID     |
+
+### Empleado
+
+| Método | URL                | Descripción                    |
+| ------ | ------------------ | ------------------------------ |
+| POST   | `/empleado`        | Crear nuevo empleado           |
+| PUT    | `/empleado`        | Actualizar empleado            |
+| GET    | `/empleado`        | Obtener todos los empleados    |
+| GET    | `/empleado/{id}`   | Obtener empleado por ID        |
+| DELETE | `/empleado/{id}`   | Eliminar empleado por ID       |
+
+### Cliente
+
+| Método | URL                | Descripción                    |
+| ------ | ------------------ | ------------------------------ |
+| POST   | `/cliente`         | Crear nuevo cliente            |
+| PUT    | `/cliente`         | Actualizar cliente             |
+| GET    | `/cliente`         | Obtener todos los clientes     |
+| GET    | `/cliente/{id}`    | Obtener cliente por ID         |
+| DELETE | `/cliente/{id}`    | Eliminar cliente por ID        |
+
+### Administrador General
+
+| Método | URL                         | Descripción                          |
+| ------ | --------------------------- | ------------------------------------ |
+| POST   | `/administradorGeneral`     | Crear nuevo administrador general    |
+| PUT    | `/administradorGeneral`     | Actualizar administrador general     |
+| GET    | `/administradorGeneral`     | Obtener todos los administradores    |
+| GET    | `/administradorGeneral/{id}`| Obtener administrador por ID         |
+| DELETE | `/administradorGeneral/{id}`| Eliminar administrador por ID        |
+
+### Administrador
+
+| Método | URL                    | Descripción                    |
+| ------ | ---------------------- | ------------------------------ |
+| POST   | `/administrador`       | Crear nuevo administrador      |
+| PUT    | `/administrador`       | Actualizar administrador       |
+| GET    | `/administrador`       | Obtener todos los administradores |
+| GET    | `/administrador/{id}`  | Obtener administrador por ID   |
+| DELETE | `/administrador/{id}`  | Eliminar administrador por ID  |
+
+### Reserva
+
+| Método | URL                | Descripción                    |
+| ------ | ------------------ | ------------------------------ |
+| POST   | `/reserva`         | Crear nueva reserva            |
+| PUT    | `/reserva`         | Actualizar reserva             |
+| GET    | `/reserva`         | Obtener todas las reservas     |
+| GET    | `/reserva/{id}`    | Obtener reserva por ID         |
+| DELETE | `/reserva/{id}`    | Eliminar reserva por ID        |
+
+### Pago
+
+| Método | URL                | Descripción                    |
+| ------ | ------------------ | ------------------------------ |
+| POST   | `/pago`            | Crear nuevo pago               |
+| PUT    | `/pago`            | Actualizar pago                |
+| GET    | `/pago`            | Obtener todos los pagos        |
+| GET    | `/pago/{id}`       | Obtener pago por ID            |
+| DELETE | `/pago/{id}`       | Eliminar pago por ID           |
+
+### Factura
+
+| Método | URL                | Descripción                    |
+| ------ | ------------------ | ------------------------------ |
+| POST   | `/factura`         | Crear nueva factura            |
+| PUT    | `/factura`         | Actualizar factura             |
+| GET    | `/factura`         | Obtener todas las facturas     |
+| GET    | `/factura/{id}`    | Obtener factura por ID         |
+| DELETE | `/factura/{id}`    | Eliminar factura por ID        |
+
+### Usuario
+
+| Método | URL                | Descripción                    |
+| ------ | ------------------ | ------------------------------ |
+| POST   | `/usuario`         | Crear nuevo usuario            |
+| PUT    | `/usuario`         | Actualizar usuario             |
+| GET    | `/usuario`         | Obtener todos los usuarios     |
+| GET    | `/usuario/{id}`    | Obtener usuario por ID         |
+| DELETE | `/usuario/{id}`    | Eliminar usuario por ID        |
 
 ---
 
@@ -98,23 +170,33 @@ La API quedará disponible en `http://localhost:8080`
 }
 ```
 
-### Actualizar hotel
+### Crear empleado
 
 ```json
 {
-    "id": 2,
-    "nombre": "Hotel 1",
-    "ciudad": "Bogotá",
-    "telefono": "1234567890",
-    "correo": "hotel1@gmail.com",
-    "direccion": "Calle 1A #1B-1"
+    "nombre": "Juan Pérez",
+    "cargo": "Recepcionista",
+    "telefono": "5551234567",
+    "correo": "juan@hotel.com"
+}
+```
+
+### Crear reserva
+
+```json
+{
+    "clienteId": 1,
+    "habitacionId": 3,
+    "fechaInicio": "2023-12-01",
+    "fechaFin": "2023-12-05",
+    "estado": "Confirmada"
 }
 ```
 
 ---
 
-Para probar la API puedes usar [Postman](https://www.postman.com/) importando una colección tipo `exportaciones.postman_collection.json`.
+Para probar la aplicacion puedes usar el archivo Exportaciones.postman_collection en resources
 
 ---
 
-Cualquier duda o mejora puedes continuar expandiendo los módulos de Empleado, Cliente, Administrador, etc.
+
