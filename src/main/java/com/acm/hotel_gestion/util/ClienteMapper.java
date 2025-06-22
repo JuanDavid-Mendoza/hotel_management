@@ -5,7 +5,7 @@ import com.acm.hotel_gestion.models.ClienteModel;
 import com.acm.hotel_gestion.persistence.entities.ClienteEntity;
 
 public class ClienteMapper {
-    public static ClienteDto modelToDTO(ClienteModel cliente) {
+    public static ClienteDto modelToDto(ClienteModel cliente) {
         return ClienteDto.builder()
                 .id(cliente.getId())
                 .primerNombre(cliente.getPrimerNombre())

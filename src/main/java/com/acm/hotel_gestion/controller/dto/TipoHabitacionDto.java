@@ -19,5 +19,5 @@ public class TipoHabitacionDto {
     @Min(value = 1, message = "la cantidad debe ser mayor a 0")
     private Integer cantidad;
 
-    private HotelEntity hotel;
+    private Long idhotel;
 }

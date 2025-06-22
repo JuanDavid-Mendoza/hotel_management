@@ -1,15 +1,15 @@
 package com.acm.hotel_gestion.persistence.entities;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @AllArgsConstructor
@@ -31,4 +31,8 @@ public class AdministradorGeneralEntity implements Serializable {
     private String primerApellido;
     @Column(name ="segundo_apellido")
     private String segundoApellido;
+
+    @OneToMany(mappedBy = "administradorGeneral")
+    @JsonManagedReference("administradorGeneral-usuarios")
+    private List<UsuarioEntity> usuarios = new ArrayList<>();
 }

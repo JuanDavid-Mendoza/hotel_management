@@ -1,7 +1,9 @@
 package com.acm.hotel_gestion.util;
 
 import com.acm.hotel_gestion.controller.dto.TipoHabitacionDto;
+import com.acm.hotel_gestion.models.HotelModel;
 import com.acm.hotel_gestion.models.TipoHabitacionModel;
+import com.acm.hotel_gestion.persistence.entities.HotelEntity;
 import com.acm.hotel_gestion.persistence.entities.TipoHabitacionEntity;
 
 public class TipoHabitacionMapper {
@@ -10,7 +12,7 @@ public class TipoHabitacionMapper {
                 .id(tipoHabitacion.getId())
                 .nombre(tipoHabitacion.getNombre())
                 .cantidad(tipoHabitacion.getCantidad())
-                .hotel(tipoHabitacion.getHotel())
+                .idhotel(HotelModel.builder().id(tipoHabitacion.getHotelID()).build().getId())
                 .build();
     }
 
@@ -19,7 +21,7 @@ public class TipoHabitacionMapper {
                 .id(tipoHabitacion.getId())
                 .nombre(tipoHabitacion.getNombre())
                 .cantidad(tipoHabitacion.getCantidad())
-                .hotel(tipoHabitacion.getHotel())
+                .hotelID(tipoHabitacion.getIdhotel())
                 .build();
     }
 
@@ -28,7 +30,7 @@ public class TipoHabitacionMapper {
                 .id(tipoHabitacion.getId())
                 .nombre(tipoHabitacion.getNombre())
                 .cantidad(tipoHabitacion.getCantidad())
-                .hotel(tipoHabitacion.getHotel())
+                .hotel(HotelEntity.builder().id(tipoHabitacion.getHotelID()).build())
                 .build();
     }
 
@@ -37,7 +39,7 @@ public class TipoHabitacionMapper {
                 .id(tipoHabitacion.getId())
                 .nombre(tipoHabitacion.getNombre())
                 .cantidad(tipoHabitacion.getCantidad())
-                .hotel(tipoHabitacion.getHotel())
+                .hotelID(tipoHabitacion.getHotel().getId())
                 .build();
     }
 }

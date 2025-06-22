@@ -5,19 +5,17 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.sql.Timestamp;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ReservaModel {
+public class UsuarioModel {
     private Long id;
-    private Timestamp fechaInicio;
-    private Timestamp fechaFinal;
-    private Integer cantidadDias;
-    private Boolean estado;
-    private Timestamp fechaReserva;
-    private Long habitacionID;
+    private String nombreUsuario;
+    private String contrasena;
+    private String rol;
     private Long clienteID;
+    private Long empleadoID;
+    private Long administradorGeneralID;
+    private Long administradorID;
 }

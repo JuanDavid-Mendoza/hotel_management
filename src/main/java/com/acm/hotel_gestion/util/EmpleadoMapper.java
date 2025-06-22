@@ -5,7 +5,7 @@ import com.acm.hotel_gestion.models.EmpleadoModel;
 import com.acm.hotel_gestion.persistence.entities.EmpleadoEntity;
 
 public class EmpleadoMapper {
-    public static EmpleadoDto modelToDTO(EmpleadoModel empleado) {
+    public static EmpleadoDto modelToDto(EmpleadoModel empleado) {
         return EmpleadoDto.builder()
                 .id(empleado.getId())
                 .correo(empleado.getCorreo())

@@ -20,7 +20,7 @@ public class HabitacionDto {
 
     private Boolean disponible;
 
-    private HotelEntity hotel;
+    private Long idhotel;
 
-    private TipoHabitacionEntity tipoHabitacion;
+    private Long idTipoHabitacion;
 }

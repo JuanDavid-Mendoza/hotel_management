@@ -35,4 +35,8 @@ public class ClienteEntity implements Serializable {
     @OneToMany(mappedBy = "cliente")
     @JsonManagedReference("cliente-reservas")
     private List<ReservaEntity> reservas =  new ArrayList<>();
+
+    @OneToMany(mappedBy = "cliente")
+    @JsonManagedReference("cliente-usuarios")
+    private List<UsuarioEntity> usuarios = new ArrayList<>();
 }

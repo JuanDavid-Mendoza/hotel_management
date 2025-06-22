@@ -1,6 +1,7 @@
 package com.acm.hotel_gestion.persistence.entities;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
@@ -10,6 +11,8 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @AllArgsConstructor
@@ -40,4 +43,12 @@ public class ReservaEntity implements Serializable {
     @JoinColumn(name="fk_id_cliente")
     @JsonBackReference("cliente-reservas")
     private ClienteEntity  cliente;
+
+    @OneToMany(mappedBy = "reserva")
+    @JsonManagedReference("reserva-pagos")
+    private List<PagoEntity> pagos = new ArrayList<>();
+
+    @OneToMany(mappedBy = "reserva")
+    @JsonManagedReference("reserva-facturas")
+    private List<FacturaEntity> facturas = new ArrayList<>();
 }

@@ -5,15 +5,16 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.sql.Timestamp;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class HabitacionModel {
+public class PagoModel {
     private Long id;
-    private Integer numeroHabitacion;
-    private Integer precioDia;
-    private Boolean disponible;
-    private Long hotelID;
-    private Long tipoHabitacionID;
+    private Timestamp fecha;
+    private Long reservaID;
+    private String metodoPago;
+    private Integer pagoTotal;
 }

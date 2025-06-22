@@ -5,7 +5,7 @@ import com.acm.hotel_gestion.models.AdministradorGeneralModel;
 import com.acm.hotel_gestion.persistence.entities.AdministradorGeneralEntity;
 
 public class AdministradorGeneralMapper {
-    public static AdministradorGeneralDto modelToDTO(AdministradorGeneralModel administradorGeneral) {
+    public static AdministradorGeneralDto modelToDto(AdministradorGeneralModel administradorGeneral) {
         return AdministradorGeneralDto.builder()
                 .id(administradorGeneral.getId())
                 .correo(administradorGeneral.getCorreo())

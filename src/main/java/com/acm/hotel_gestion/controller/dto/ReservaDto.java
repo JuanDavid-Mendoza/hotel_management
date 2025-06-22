@@ -24,7 +24,7 @@ public class ReservaDto {
 
     private Timestamp fechaReserva;
 
-    private HabitacionEntity habitacion;
+    private Long idhabitacion;
 
-    private ClienteEntity cliente;
+    private Long idcliente;
 }
