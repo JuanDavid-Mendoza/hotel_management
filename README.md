@@ -1,8 +1,8 @@
 # Hotel Gestion Backend
 
-## Carlos Sinuco 
-## Kevin Sierra
-## Juan Mendoza
+# Carlos Andres Sinuco Murcia
+# Kevin Nicolas Sierra González
+# Juan David Mendoza Vargas
 
 Este proyecto es un backend desarrollado con **Spring Boot** y **PostgreSQL** para la gestión de hoteles, habitaciones, tipos de habitación, empleados, clientes, reservas y otros módulos relacionados.
 
