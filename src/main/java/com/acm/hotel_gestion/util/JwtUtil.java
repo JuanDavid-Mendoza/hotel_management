@@ -42,7 +42,7 @@ public class JwtUtil {
     public boolean validateToken(String token) {
         try {
             Claims claims = getClaimsFromToken(token);
-            return claims.getExpiration().before(new Date(System.currentTimeMillis())) && claims.getSubject() != null;
+            return claims.getExpiration().after(new Date(System.currentTimeMillis())) && claims.getSubject() != null;
         } catch (JwtException | IllegalArgumentException e) {
             return false;
         }

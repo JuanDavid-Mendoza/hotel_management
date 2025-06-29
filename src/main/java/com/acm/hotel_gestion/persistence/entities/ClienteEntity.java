@@ -19,6 +19,7 @@ import java.util.List;
 @Table(name="cliente")
 public class ClienteEntity implements Serializable {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id_cliente")
     private Long id;
     @Column(name="primer_nombre")

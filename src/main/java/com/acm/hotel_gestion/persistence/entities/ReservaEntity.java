@@ -22,6 +22,7 @@ import java.util.List;
 @Table(name="reserva")
 public class ReservaEntity implements Serializable {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_reserva")
     private Long id;
     @Column(name = "fecha_inicio")

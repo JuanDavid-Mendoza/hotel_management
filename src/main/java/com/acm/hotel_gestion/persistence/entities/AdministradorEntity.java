@@ -19,6 +19,7 @@ import java.util.List;
 @Table(name="administrador")
 public class AdministradorEntity implements Serializable {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id_administrador")
     private Long id;
     @Column(name="primer_nombre")

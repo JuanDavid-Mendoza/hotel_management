@@ -21,6 +21,7 @@ import java.util.List;
 @Table(name="pago")
 public class PagoEntity implements Serializable {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_pago")
     private Long id;
     private Timestamp fecha;

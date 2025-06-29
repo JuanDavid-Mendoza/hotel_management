@@ -19,6 +19,7 @@ import java.util.List;
 @Table(name="hotel")
 public class HotelEntity implements Serializable {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id_hotel")
     private Long id;
     private String nombre;

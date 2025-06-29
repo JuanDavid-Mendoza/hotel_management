@@ -20,6 +20,7 @@ import java.util.List;
 @Table(name="habitacion")
 public class HabitacionEntity implements Serializable {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id_habitacion")
     private Long id;
     @Column(name="numero_habitacion")
