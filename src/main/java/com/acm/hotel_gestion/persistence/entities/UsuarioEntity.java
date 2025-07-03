@@ -17,6 +17,7 @@ import java.io.Serializable;
 @Table(name="usuario")
 public class UsuarioEntity implements Serializable {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_usuario")
     private Long id;
     @Column(name = "nombre_usuario")

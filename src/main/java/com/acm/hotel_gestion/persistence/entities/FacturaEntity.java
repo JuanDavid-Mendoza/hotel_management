@@ -18,6 +18,7 @@ import java.sql.Timestamp;
 @Table(name="factura")
 public class FacturaEntity implements Serializable {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_factura")
     private Long id;
 
