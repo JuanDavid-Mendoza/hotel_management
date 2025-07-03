@@ -200,6 +200,7 @@ La API quedará disponible en `http://localhost:8080`
 ---
 
 Para probar la aplicacion puedes usar el archivo Exportaciones.postman_collection en resources
+Para probar la entrega final se tiene que correr el archivo auto_pk, se encuentra en resources
 
 ---
 
